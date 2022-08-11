@@ -1,0 +1,189 @@
+{ 
+    "category": [{
+        "title": "ninja",
+        "link": "#",
+        "mark": "®"
+    }, {
+        "title": "ninja",
+            "link": "#",
+            "headingArray": [{
+            "heading": [{
+                "title": "sport",
+                    "link": "#",
+                    "subheading": [{
+                        "title": "NINJA 400",
+                        "imagen": "Kawasaki_NINJA_400.png",
+                        "link": "#URLhere",
+                        "price": "31.990.000"
+                    }, {
+                        "title": "NINJA 400 KRT",
+                        "imagen": "Kawasaki_NINJA_400_KRT.png",
+                        "link": "#URLhere",
+                        "price": "32.990.000"
+                    }
+                ]
+            }]
+        }, {
+            "heading": [{
+                "title": "Super-sport",
+                    "link": "#URLhere",
+                        "subheading": [{
+                        "title": "NINJA ZX6R",
+                        "imagen": "Kawasaki_NINJA_ZX6R.png",
+                        "link": "#URLhere",
+                        "price": "AGOTADO"
+                    }, {
+                        "title": "NINJA ZX10R",
+                        "imagen": "Kawasaki_NINJA_ZX10R.png",
+                        "link": "#URLhere",
+                        "price": "AGOTADO"
+                    }
+                ]
+            }]
+        }]
+    }, {
+        "title": "z",
+        "link": "#URLhere",
+        "mark": ""
+    }, {
+        "title": "z",
+            "link": "#URLhere",
+            "headingArray": [{
+            "heading": [{
+                "title": "supernaked",
+                    "link": "#URLhere",
+                    "subheading": [{
+                        "title": "Z400",
+                        "imagen": "Kawasaki_Z400.png",
+                        "link": "#URLhere",
+                        "price": "31.990.000"
+                    }, {
+                        "title": "Z900",
+                        "imagen": "Kawasaki_Z900.png",
+                        "link": "#URLhere",
+                        "price": "51.990.000"
+                    },
+                    {
+                        "title": "Z1000",
+                        "imagen": "Kawasaki_Z1000.png",
+                        "link": "#URLhere",
+                        "price": "59.990.000"
+                    }]
+            }]
+        }, {
+            "heading": [{
+                "title": "retro-sport",
+                    "link": "#URLhere",
+                    "subheading": [{
+                        "title": "Z900 RS",
+                        "imagen": "Kawasaki_Z900_RS.png",
+                        "link": "#URLhere",
+                        "price": "64.990.000"
+                }]
+            }]
+        }, {
+            "heading": [{
+                "title": "hipernaked",
+                    "link": "#URLhere",
+                    "subheading": [{
+                        "title": "z h2",
+                        "imagen": "Kawasaki_ZH2.png",
+                        "link": "#URLhere",
+                        "price": "92.990.000"
+                }]
+            }]
+        }]
+    },
+    {
+        "title": "versys",
+        "link": "#URLhere",
+        "mark": "®"
+    }, {
+        "title": "versys",
+            "link": "#URLhere",
+            "headingArray": [{
+            "heading": [{
+                "title": "Adventure-y-touring",
+                    "link": "#URLhere",
+                    "subheading": [{
+                        "title": "Z400",
+                        "imagen": "Kawasaki_VERSYSX300.png",
+                        "link": "#URLhere",
+                        "price": "30.990.000"
+                    }, {
+                        "title": "Z900",
+                        "imagen": "Kawasaki_VERSYS650.png",
+                        "link": "#URLhere",
+                        "price": "48.990.000"
+                    },
+                    {
+                        "title": "Z1000",
+                        "imagen": "Kawasaki_VERSYS1000S.png",
+                        "link": "#URLhere",
+                        "price": "69.990.000"
+                    }]
+            }]
+        }]
+    },
+    {
+        "title": "klx",
+        "link": "#URLhere",
+        "mark": "®"
+    }, {
+        "title": "klx",
+            "link": "#URLhere",
+            "headingArray": [{
+            "heading": [{
+                "title": "off-road",
+                    "link": "#URLhere",
+                    "subheading": [{
+                        "title": "KLX 300R",
+                        "imagen": "Kawasaki_KLX300R.png",
+                        "link": "#URLhere",
+                        "price": "AGOTADO"
+                    }]
+            }]
+        }, {
+            "heading": [{
+                "title": "doble-propósito",
+                    "link": "#URLhere",
+                    "subheading": [{
+                        "title": "KLX 150J",
+                        "imagen": "Kawasaki_KLX150J.png",
+                        "link": "#URLhere",
+                        "price": "12.499.000"
+                    }]
+            }]
+        }]
+    },{
+        "title": "kx",
+        "link": "#URLhere",
+        "mark": "™"
+    }, {
+        "title": "kx",
+            "link": "#URLhere",
+            "headingArray": [{
+            "heading": [{
+                "title": "motocross",
+                    "link": "#URLhere",
+                    "subheading": [{
+                        "title": "KX 250",
+                        "imagen": "Kawasaki_KX250.png",
+                        "link": "#URLhere",
+                        "price": "AGOTADO"
+                    }]
+            }]
+        }, {
+            "heading": [{
+                "title": "enduro",
+                    "link": "#URLhere",
+                    "subheading": [{
+                        "title": "KX 250 X",
+                        "imagen": "Kawasaki_KX250X.png",
+                        "link": "#URLhere",
+                        "price": "AGOTADO"
+                    }]
+            }]
+        }]
+    }]
+}

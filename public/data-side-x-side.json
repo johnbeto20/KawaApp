@@ -1,0 +1,58 @@
+ { 
+    "category": [{
+        "title": "teryx",
+        "link": "",
+        "mark": ""
+    }, {
+        "title": "teryx",
+            "link": "#",
+            "headingArray": [{
+            "heading": [{
+                "title": "standar",
+                    "link": "#",
+                    "subheading": [{
+                        "title": "TERYX KRX 1000 ESPECIAL",
+                        "imagen": "TERYX_KRX _1000 _ESPECIAL.png",
+                        "link": "#URLhere",
+                        "price": "125.000.000"
+                    }, {
+                        "title": "TERYX KRX 1000 TRAIL",
+                        "imagen": "TERYX_KRX _1000 _TRAIL.png",
+                        "link": "#URLhere",
+                        "price": "130.000.000"
+                    }
+                ]
+            }]
+        }]
+    }, {
+        "title": "mule",
+        "link": "#URLhere",
+        "mark": ""
+    }, {
+        "title": "mule",
+            "link": "#URLhere",
+            "headingArray": [{
+            "heading": [{
+                "title": "standar",
+                    "link": "#URLhere",
+                    "subheading": [{
+                        "title": "MULE PRO DXT",
+                        "imagen": "MULE_PRO_DXT.png",
+                        "link": "#URLhere",
+                        "price": "AGOTADO"
+                    }, {
+                        "title": "MULE PRO FXT",
+                        "imagen": "MULE_PRO_FXT.png",
+                        "link": "#URLhere",
+                        "price": "AGOTADO"
+                    },
+                    {
+                        "title": "MULE 4010 TRANS 4X4",
+                        "imagen": "MULE_410_TRANS_4X4.png",
+                        "link": "#URLhere",
+                        "price": "AGOTADO"
+                    }]
+            }]
+        }]
+    }]
+}
