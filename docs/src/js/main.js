@@ -67,7 +67,7 @@ var dataBase = [
                             $.each(this.heading, function () {
                                 var textHeading = this.title
                                 $.each(this.subheading, function () {
-                                    htmlGeneral+=`<div class="col-4">
+                                    htmlGeneral+=`<div class="col-md-4">
                                                 <div class="element-obj" id="elementsDom"><a href="${this.link}" class="text-decoration-none text-black">
                                             <img src="src/img/motos/${textIndex}/${textHeading}/${this.imagen}" alt="${this.title}" class="w-100"/>
                                             <div class="element-obj__text">
@@ -85,7 +85,7 @@ var dataBase = [
                             $.each(this.heading, function () {
                                 var textHeading = this.title
                                 $.each(this.subheading, function () {
-                                    htmlGeneral+=`<div class="col-4">
+                                    htmlGeneral+=`<div class="col-md-4">
                                                 <div class="element-obj" id="elementsDom"><a href="${this.link}" class="text-decoration-none text-black">
                                             <img src="src/img/motos/${textIndex}/${textHeading}/${this.imagen}" alt="${this.title}" class="w-100"/>
                                             <div class="element-obj__text">
