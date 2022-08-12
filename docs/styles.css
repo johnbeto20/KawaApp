@@ -11161,8 +11161,17 @@ p, span, li, table, a {
 .header__megaMenuContent .cont-heading .heading:last-child {
   border-right: none;
 }
+.header__megaMenuContent .cont-heading .heading .subheading img, .header__megaMenuContent .cont-heading .heading .subheading h4, .header__megaMenuContent .cont-heading .heading .subheading .h4 {
+  transition: all ease-in-out 0.2s;
+}
 .header__megaMenuContent .cont-heading .heading .subheading__text {
   margin-top: -40px;
+}
+.header__megaMenuContent .cont-heading .heading .subheading:hover img {
+  transform: scale(0.95);
+}
+.header__megaMenuContent .cont-heading .heading .subheading:hover h4, .header__megaMenuContent .cont-heading .heading .subheading:hover .h4 {
+  color: #69BE28 !important;
 }
 .header__line {
   height: 30px;
@@ -11324,6 +11333,15 @@ p, span, li, table, a {
   margin: 0 80px;
   text-align: center;
 }
+.element-obj > a > img, .element-obj > a p {
+  transition: all ease-in-out 0.2s;
+}
+.element-obj > a:hover img {
+  transform: scale(0.95);
+}
+.element-obj > a:hover .element-obj__name {
+  color: #69BE28 !important;
+}
 .element-obj__tab img {
   min-height: 25px;
   max-height: 30px;
@@ -11340,7 +11358,7 @@ p, span, li, table, a {
   content: "";
   display: block;
   position: absolute;
-  border: solid 2px #69BE28;
+  background: #69BE28;
   bottom: 0;
   width: 50px;
   left: 0;
@@ -11348,6 +11366,7 @@ p, span, li, table, a {
   margin: auto;
   transition: transform ease-in 0.2s;
   transform: scale(0, 1);
+  height: 4px;
 }
 .element-obj__tab li.active {
   color: #000000;
@@ -11368,11 +11387,12 @@ p, span, li, table, a {
   content: "";
   display: block;
   position: absolute;
-  border: solid 2px #69BE28;
+  background: #69BE28;
   bottom: 0;
   width: 40px;
   left: 0;
   right: 0;
   margin: auto;
   transition: all ease-in 0.2s;
+  height: 4px;
 }/*# sourceMappingURL=styles.css.map */
