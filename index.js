@@ -6,7 +6,7 @@ const path = require('path')
 app.set('port', 3000)
 
 //midewares
-app.use(express.static(path.join(__dirname,'public')))
+app.use(express.static(path.join(__dirname,'docs')))
 
 //routes
 app.get('/',(req,res)=> {
