@@ -526,6 +526,7 @@ p, span, li, table, a {
     }
     &__tab {
         @extend %resetList;
+        overflow-y: auto;
         img {
             min-height: 25px;
             max-height: 30px;
