@@ -11383,9 +11383,6 @@ p, span, li, table, a {
 .element-obj > a:hover .element-obj__name {
   color: #69BE28 !important;
 }
-.element-obj__tab {
-  overflow-y: auto;
-}
 .element-obj__tab img {
   min-height: 25px;
   max-height: 30px;
