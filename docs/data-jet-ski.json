@@ -1,26 +1,29 @@
  { 
     "category": [{
-        "title": "jet-ski",
+        "title": "jetski",
         "link": "",
         "mark": ""
     }, {
-        "title": "jet-ski",
+        "title": "jetski",
             "link": "#",
             "headingArray": [{
             "heading": [{
                 "title": "standar",
                     "link": "#",
                     "subheading": [{
+                        "model":"2020",
                         "title": "JET SKI SX-R",
                         "imagen": "JET_SKI _SX_160LX.png",
                         "link": "#URLhere",
                         "price": "AGOTADO"
                     }, {
+                        "model":"2020",
                         "title": "JET SKI STX 160LX",
                         "imagen": "JET_SKI _SX_160LX.png",
                         "link": "#URLhere",
                         "price": "AGOTADO"
                     },  {
+                        "model":"2020",
                         "title": "JET SKI ULTRA 310X",
                         "imagen": "JET_SKI _ULTRA-310X.png",
                         "link": "#URLhere",

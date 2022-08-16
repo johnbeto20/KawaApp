@@ -49,6 +49,13 @@ $form-check-input-focus-box-shadow: none;
             margin-top: 10px;
             margin-right: 5px;
         }
+        &:hover {
+            background-color: $color-1;
+            border-color: $color-1;
+            &:before {
+                border-left-color: $white;
+            }
+        }
     }
     &-primary {
         color: $white;
@@ -64,6 +71,7 @@ $form-check-input-focus-box-shadow: none;
     border-right: none;
     border-left: none;
     border-top: none;
+    border-radius: 0;
     padding: 0.25rem 0;  
     &:focus {
         background: transparent;
@@ -257,6 +265,7 @@ p, span, li, table, a {
                 color: #78777C;
                 padding-top: 50px;
                 padding-bottom: 20px;
+                box-shadow: 0 20px 20px rgba(0,0,0,0.5);
                 .category-heading {
                     position: relative;
                     background: $white;
@@ -279,6 +288,8 @@ p, span, li, table, a {
                         border-right: none
                     }
                     .subheading {
+                        opacity: 0;
+                        visibility: hidden;
                         img, h4 {
                             transition: all ease-in-out .2s;
                         }
@@ -477,9 +488,26 @@ p, span, li, table, a {
     }
 }
 
+@keyframes showElements {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.show_elements {
+    animation: showElements ease-in 0.2s forwards;
+}
+
 .element-obj {
     margin: 0 80px;
     text-align: center;
+    opacity: 0;
+    visibility: hidden;
     > a {
         > img, p {
             transition: all ease-in-out .2s;
@@ -509,6 +537,7 @@ p, span, li, table, a {
             position: relative;
             padding-bottom: 15px;
             color: $border-color;
+            padding-top: 30px;
             &:after {
                 content: "";
                 display: block;
@@ -532,10 +561,48 @@ p, span, li, table, a {
                     transform: scale(1,1);
                 }
             }
+            &[data-name="teryx"]{
+                &:before {
+                    content: "";
+                    border: #A8A8A8 solid 1px;
+                    position: absolute;
+                    width: 50%;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            &[data-name="mule"]{
+                &:before {
+                    content: "";
+                    border: #A8A8A8 solid 1px;
+                    position: absolute;
+                    width: 50%;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+    &__tab-text {
+        position: absolute;
+        top: -17px;
+        white-space: nowrap;
+        background: $white;
+        right: -60px;
+        display: inline-block;
+        padding: 5px;
+        z-index: 2;
+        &--only {
+            right: 0;
+            left: 0;
+            margin: auto;
+            text-align: center;
         }
     }
     &__text {
         margin-top: -60px;
+        position: relative;
+        z-index: 2;
     }
     &__name {
         position: relative;

@@ -11,11 +11,13 @@
                 "title": "standar",
                     "link": "#",
                     "subheading": [{
+                        "model":"2021",
                         "title": "TERYX KRX 1000 ESPECIAL",
                         "imagen": "TERYX_KRX _1000 _ESPECIAL.png",
                         "link": "#URLhere",
                         "price": "125.000.000"
                     }, {
+                        "model":"2021",
                         "title": "TERYX KRX 1000 TRAIL",
                         "imagen": "TERYX_KRX _1000 _TRAIL.png",
                         "link": "#URLhere",
@@ -36,17 +38,20 @@
                 "title": "standar",
                     "link": "#URLhere",
                     "subheading": [{
+                        "model":"2021",
                         "title": "MULE PRO DXT",
                         "imagen": "MULE_PRO_DXT.png",
                         "link": "#URLhere",
                         "price": "AGOTADO"
                     }, {
+                        "model":"2022",
                         "title": "MULE PRO FXT",
                         "imagen": "MULE_PRO_FXT.png",
                         "link": "#URLhere",
                         "price": "AGOTADO"
                     },
                     {
+                        "model":"2022",
                         "title": "MULE 4010 TRANS 4X4",
                         "imagen": "MULE_410_TRANS_4X4.png",
                         "link": "#URLhere",

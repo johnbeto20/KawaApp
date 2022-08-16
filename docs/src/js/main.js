@@ -32,9 +32,9 @@ var dataBase = [
                         html+=`<li class="heading text-center">`;
                         $.each(this.heading, function () {
                             var textHeading = this.title
-                            html+=`<span class="category-heading f-oswald text-decoration-none title-gray">${this.title}</span>`;
+                            html+=`<span class="category-heading f-oswald text-decoration-none title-gray show_elements">${this.title}</span>`;
                             $.each(this.subheading, function () {
-                                html+=`<div class="subheading"><a href="${this.link}" class="text-decoration-none">
+                                html+=`<div class="subheading show_elements" style="animation-delay: 0.15s"><a href="${this.link}" class="text-decoration-none">
                                     <img src="src/img/motos/${textIndex}/${textHeading}/${this.imagen}" alt="${this.title}" class="w-100"/>
                                     <div class="subheading__text">   
                                     <h4 class="f-oswald text-dark fs-3 mb-0">${this.title}</h4>
@@ -54,10 +54,11 @@ var dataBase = [
             html+='</li>';
             $(`#nav-${i}`).html(html);
         })
-    });   
+    });
     
     function GetData(pos) {
         var htmlGeneral = ''; 
+        var count = 0;
         $.each(dataBase, function(i, item) {
             $.getJSON( dataBase[i].datajson, function( data ) {
                 $.each(data.category, function (idx, obj) {
@@ -68,15 +69,16 @@ var dataBase = [
                                 var textHeading = this.title
                                 $.each(this.subheading, function () {
                                     htmlGeneral+=`<div class="col-md-4">
-                                                <div class="element-obj" id="elementsDom"><a href="${this.link}" class="text-decoration-none text-black">
+                                                <div class="element-obj show_elements" id="elementsDom" style="animation-delay: ${count*0.25}s"><a href="${this.link}" class="text-decoration-none text-black">
                                             <img src="src/img/motos/${textIndex}/${textHeading}/${this.imagen}" alt="${this.title}" class="w-100"/>
                                             <div class="element-obj__text">
-                                                <span class="fw-bold f-oswald text-uppercase">modelo 2023</span>
+                                                <span class="fw-bold f-oswald text-uppercase">modelo ${this.model}</span>
                                                 <p class="element-obj__name fw-bold f-oswald text-uppercase fs-2 m-0 pb-2">${this.title}</p>
                                                 <p class="element-obj__price mt-2 fs-6 text-secondary">PVSP: ${this.price}</p>
                                             </div>
                                         </a>
                                     </div></div>`;
+                                    count++;
                                 });
                             });
                         });
@@ -86,15 +88,16 @@ var dataBase = [
                                 var textHeading = this.title
                                 $.each(this.subheading, function () {
                                     htmlGeneral+=`<div class="col-md-4">
-                                                <div class="element-obj" id="elementsDom"><a href="${this.link}" class="text-decoration-none text-black">
+                                                <div class="element-obj show_elements" id="elementsDom" style="animation-delay: ${count*0.25}s"><a href="${this.link}" class="text-decoration-none text-black">
                                             <img src="src/img/motos/${textIndex}/${textHeading}/${this.imagen}" alt="${this.title}" class="w-100"/>
                                             <div class="element-obj__text">
-                                                <span class="fw-bold f-oswald text-uppercase">modelo 2023</span>
+                                                <span class="fw-bold f-oswald text-uppercase">modelo ${this.model}</span>
                                                 <p class="element-obj__name fw-bold f-oswald text-uppercase fs-2 m-0 pb-2">${this.title}</p>
                                                 <p class="element-obj__price mt-2 fs-6 text-secondary">PVSP: ${this.price}</p>
                                             </div>
                                         </a>
                                     </div></div>`;
+                                    count++;
                                 });
                             });
                         });

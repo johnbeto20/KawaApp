@@ -11,11 +11,13 @@
                 "title": "sport",
                     "link": "#",
                     "subheading": [{
+                        "model":"2023",
                         "title": "NINJA 400",
                         "imagen": "Kawasaki_NINJA_400.png",
                         "link": "#URLhere",
                         "price": "31.990.000"
                     }, {
+                        "model":"2023",
                         "title": "NINJA 400 KRT",
                         "imagen": "Kawasaki_NINJA_400_KRT.png",
                         "link": "#URLhere",
@@ -28,11 +30,13 @@
                 "title": "super-sport",
                     "link": "#URLhere",
                         "subheading": [{
+                        "model":"2021",
                         "title": "NINJA ZX6R",
                         "imagen": "Kawasaki_NINJA_ZX6R.png",
                         "link": "#URLhere",
                         "price": "AGOTADO"
                     }, {
+                        "model":"2023",
                         "title": "NINJA ZX10R",
                         "imagen": "Kawasaki_NINJA_ZX10R.png",
                         "link": "#URLhere",
@@ -53,17 +57,20 @@
                 "title": "supernaked",
                     "link": "#URLhere",
                     "subheading": [{
+                        "model":"2022",
                         "title": "Z400",
                         "imagen": "Kawasaki_Z400.png",
                         "link": "#URLhere",
                         "price": "31.990.000"
                     }, {
+                        "model":"2023",
                         "title": "Z900",
                         "imagen": "Kawasaki_Z900.png",
                         "link": "#URLhere",
                         "price": "51.990.000"
                     },
                     {
+                        "model":"2022",
                         "title": "Z1000",
                         "imagen": "Kawasaki_Z1000.png",
                         "link": "#URLhere",
@@ -75,6 +82,7 @@
                 "title": "retro-sport",
                     "link": "#URLhere",
                     "subheading": [{
+                        "model":"2023",
                         "title": "Z900 RS",
                         "imagen": "Kawasaki_Z900_RS.png",
                         "link": "#URLhere",
@@ -86,6 +94,7 @@
                 "title": "hipernaked",
                     "link": "#URLhere",
                     "subheading": [{
+                        "model":"2023",
                         "title": "z h2",
                         "imagen": "Kawasaki_ZH2.png",
                         "link": "#URLhere",
@@ -106,18 +115,21 @@
                 "title": "Adventure-y-touring",
                     "link": "#URLhere",
                     "subheading": [{
-                        "title": "Z400",
+                        "model":"2022",
+                        "title": "VERSYS X 300",
                         "imagen": "Kawasaki_VERSYSX300.png",
                         "link": "#URLhere",
                         "price": "30.990.000"
                     }, {
-                        "title": "Z900",
+                        "model":"2023",
+                        "title": "VERSYS 650",
                         "imagen": "Kawasaki_VERSYS650.png",
                         "link": "#URLhere",
                         "price": "48.990.000"
                     },
                     {
-                        "title": "Z1000",
+                        "model":"2022",
+                        "title": "VERSYS 1000 S",
                         "imagen": "Kawasaki_VERSYS1000S.png",
                         "link": "#URLhere",
                         "price": "69.990.000"
@@ -137,6 +149,7 @@
                 "title": "off-road",
                     "link": "#URLhere",
                     "subheading": [{
+                        "model":"2023",
                         "title": "KLX 300R",
                         "imagen": "Kawasaki_KLX300R.png",
                         "link": "#URLhere",
@@ -148,6 +161,7 @@
                 "title": "doble-propósito",
                     "link": "#URLhere",
                     "subheading": [{
+                        "model":"2022",
                         "title": "KLX 150J",
                         "imagen": "Kawasaki_KLX150J.png",
                         "link": "#URLhere",
@@ -167,6 +181,7 @@
                 "title": "motocross",
                     "link": "#URLhere",
                     "subheading": [{
+                        "model":"2021",
                         "title": "KX 250",
                         "imagen": "Kawasaki_KX250.png",
                         "link": "#URLhere",
@@ -178,6 +193,7 @@
                 "title": "enduro",
                     "link": "#URLhere",
                     "subheading": [{
+                        "model":"2021",
                         "title": "KX 250 X",
                         "imagen": "Kawasaki_KX250X.png",
                         "link": "#URLhere",
