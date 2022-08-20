@@ -44,8 +44,17 @@
                 <div class="header__line"></div>
                 <div class="header__contMenus border-bottom border-primary" id="menuGeneral">
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col">
+                        <div class="row flex-md-row-reverse">
+                            <div class="col-md-6">
+                                <ul class="header__menu d-flex align-items-center justify-content-end">
+                                    <li><a href="#" class="f-oswald text-decoration-none p-2 p-md-3 d-inline-block"><b>MANUALES</b></a></li>
+                                    <li><a href="#" class="f-oswald text-decoration-none p-2 p-md-3 d-inline-block"><b>GARANTÍAS</b></a></li>
+                                    <li><a href="#" class="f-oswald text-decoration-none p-2 p-md-3 d-inline-block"><b>TALLERES AUTORIZADOS</b></a></li>
+                                    <li><a href="#" class="f-oswald text-decoration-none p-2 p-md-3 d-inline-block"><b>BLOG</b></a></li>
+                                    <li><a href="#" class="f-oswald text-decoration-none p-2 p-md-3 d-inline-block"><b>AUTECO MOBILITY</b></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
                                 <ul class="header__megaMenu d-flex align-items-center">
                                     <li class="text-white f-oswald border-start border-ligth p-3"><b>MOTOCICLETAS</b>
                                         <ul id="nav-0" class="header__megaMenuContent"></ul>
@@ -58,15 +67,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col">
-                                <ul class="header__menu d-flex align-items-center justify-content-end">
-                                    <li><a href="#" class="f-oswald text-decoration-none p-3 d-inline-block"><b>MANUALES</b></a></li>
-                                    <li><a href="#" class="f-oswald text-decoration-none p-3 d-inline-block"><b>GARANTÍAS</b></a></li>
-                                    <li><a href="#" class="f-oswald text-decoration-none p-3 d-inline-block"><b>TALLERES AUTORIZADOS</b></a></li>
-                                    <li><a href="#" class="f-oswald text-decoration-none p-3 d-inline-block"><b>BLOG</b></a></li>
-                                    <li><a href="#" class="f-oswald text-decoration-none p-3 d-inline-block"><b>AUTECO MOBILITY</b></a></li>
-                                </ul>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -79,7 +80,7 @@
         </section>
         <section class="slide-home">
             <div>
-                <img src="src/img/content/IMG_Banner_KX250.jpg" alt="imagen de kawasaki" class="w-100">
+                <img src="src/img/content/IMG_Banner_KX250.jpg" alt="imagen de kawasaki" class="w-100 image-slide">
                 <div class="slide-home__content">
                     <img src="src/img/LOGO_KX250.svg" alt="modelo 2022 KX 250" class="mb-4">
                     <h2 class="text-white text-uppercase">Sé el próximo</h2>
@@ -88,7 +89,7 @@
                 </div>
             </div>
             <div>
-                <img src="src/img/content/IMG_Banner_KX250.jpg" alt="imagen de kawasaki" class="w-100">
+                <img src="src/img/content/IMG_Banner_KX250.jpg" alt="imagen de kawasaki" class="w-100 image-slide">
                 <div class="slide-home__content">
                     <img src="src/img/LOGO_KX250.svg" alt="modelo 2022 KX 250" class="mb-4">
                     <h2 class="text-white text-uppercase">Sé el próximo</h2>
@@ -97,6 +98,7 @@
                 </div>
             </div>
         </section>
+        <span id="playPAuse" class="estate-slide pause"></span>
         <section>
             <div class="container-fluid">
                 <h2 class="Sub-title">Vehículos destacados</h2>
@@ -139,7 +141,7 @@
                                     <input class="form-control fc-line"  type="text" name="phone" id="phone" placeholder="Celular">
                                 </label>
                             </div>
-                            <div class="col-md-6 ps-4">
+                            <div class="col-md-6 ps-md-4">
                                 <label for="referent"  class="w-100 mb-3">
                                     <input class="form-control fc-line"  type="text" name="referent" id="referent" placeholder="Selecciona referencia">
                                 </label>
@@ -154,9 +156,9 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="row my-5">
-                            <div class="col text-center">
-                                <label class="form-check-label fd-6" for="checkAcepto ">
+                        <div class="row row mx-md-5 mx-2 my-4 flex-wrap justify-content-center">
+                            <div class="col-md-11">
+                                <label class="form-check-label fd-6 fc-normal fd-6 d-flex mt-3" for="checkAcepto ">
                                 <input type="checkbox" class="form-check-input" id="checkAcepto"> 
                                 <small class="f-fira"> Auteco Mobility S.A.S para que mis datos personales sean tratados conforme al manual interno de políticas y procedimientos de datos personales que se encuentra publicada en la página web www.autecomobility.com, disponible aquí.</small> </label> 
                             </div>
@@ -200,7 +202,7 @@
                 <h2 class="text-white Sub-title mb-5">ACCESORIOS Y MERCHANDISING</h2>
                 <div class="row justify-content-md-center">
                     <div class="col-md-4">
-                        <div class="content--merchan bg-black text-center pt-3 mb-3">
+                        <div class="content--merchan bg-black text-center pt-3 mb-md-2 mb-4">
                             <div class="content__text--merchan">
                                 <a href="#" class="link f-oswald text-uppercase text-decoration-none">Compra aquí</a>
                                 <h3 class="text-white text-uppercase pb-2">Repuestos</h3>
@@ -209,7 +211,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="content--merchan bg-black text-center pt-3 mb-3">
+                        <div class="content--merchan bg-black text-center pt-3 mb-md-2 mb-4">
                             <div class="content__text--merchan">
                                 <a href="#" class="link f-oswald text-uppercase text-decoration-none">Compra aquí</a>
                                 <h3 class="text-white text-uppercase pb-2">Ropa casual</h3>
@@ -218,7 +220,7 @@
                         </div>
                     </div>
                     <div class="col-md-4"> 
-                        <div class="content--merchan bg-black text-center pt-3 mb-3">
+                        <div class="content--merchan bg-black text-center pt-3 mb-md-2 mb-4">
                             <div class="content__text--merchan">
                                 <a href="#" class="link f-oswald text-uppercase text-decoration-none">Compra aquí</a>
                                 <h3 class="text-white text-uppercase pb-2">Accesorios para la moto</h3>
@@ -229,10 +231,10 @@
                 </div>
             </div>
         </section>
-        <section class="bg-secondary text-white py-5">
+        <section class="newsletter bg-secondary text-white py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 newsletter__text">
                         <h2 class="text-primary">Regístrate al newsletter</h2>
                         <p>Sé el primero en recibir nuestras ofertas y lanzamientos</p>
                     </div>
@@ -248,7 +250,7 @@
                                     <label class="w-100">
                                         <input type="text" name="user-name" id="user-name" placeholder="Correo electrónico" class="form-control fw-bold rounded-0 rounded-start">
                                     </label>
-                                    <button class="btn btn-primary rounded-end text-black d-flex align-items-center px-5">Evniar <img src="src/img/ico/arrow-rigth.svg" alt="" class="ms-3"></button>
+                                    <button class="btn btn-primary rounded-end text-black d-flex align-items-center px-md-5 px-3">Evniar <img src="src/img/ico/arrow-rigth.svg" alt="" class="ms-3"></button>
                                 </div>
                             </div>
                             <div class="row">

@@ -8,8 +8,19 @@ $(document).ready(function(){
         slidesToShow: 1,
         adaptiveHeight: true,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 4000,
     });
+    $("#playPAuse").toggle(
+        function(){
+            $('.slide-home').slick('slickPause'),
+            $(this).removeClass("pause").addClass("play")
+        },
+        function(){
+            $('.slide-home').slick('slickPlay'),
+            $(this).removeClass("play").addClass("pause")
+        }
+    )
+    $('.slick-dots').prepend($("#playPAuse"))
 });
 
 

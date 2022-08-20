@@ -118,10 +118,10 @@ p, span, li, table, a {
     white-space: nowrap;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 20px;
     @include media(sm){
         display: block;
         text-align: center;
-        margin-top: 60px;
     }
     &:after {
         content: "";
@@ -141,6 +141,21 @@ p, span, li, table, a {
         width: 30px;
         margin-right: 10px;
         border-color: $color-1;
+        @include media(sm){
+            width: 60px;
+        }
+    }
+}
+
+
+.fc-normal {
+    .form-check-input {
+        display: block;
+        width: 20px;
+        margin-right: 10px;
+        @include media(sm){
+            width: 50px;
+        }
     }
 }
 
@@ -203,6 +218,9 @@ p, span, li, table, a {
         }
     }
     &__megaMenu {
+        @include media(sm) {
+            border-top: $color-text solid 1px;
+        }
         > li {
             cursor: pointer;
             &:after {
@@ -218,7 +236,14 @@ p, span, li, table, a {
                 background: #2C2C2E;
                 .header__megaMenuContent {
                     display: flex;
+                    @include media(sm) {
+                    }
                 }
+            }
+            @include media(sm) {
+                width: 100%;
+                text-align: center;
+                border: none !important;
             }
         }
         &Content {
@@ -234,6 +259,9 @@ p, span, li, table, a {
             background: #D6D5DA;
             .top-level {
                 padding-top: 15px;
+                @include media(sm) {
+                    padding-top: 5px;
+                }
                 > a {
                     font-family: $font-family-base;
                     font-weight: bold;
@@ -248,6 +276,12 @@ p, span, li, table, a {
                     text-transform: uppercase;
                     transition: all ease-in .2s;
                     margin: 10px 0 15px 0;
+                    @include media(sm) {
+                        margin: 0;
+                        font-size: 20px;
+                        width: 100%;
+                        padding: 5px;
+                    }
                     &:after {
                         content: "";
                         display: inline-block;
@@ -291,16 +325,27 @@ p, span, li, table, a {
                 padding-top: 50px;
                 padding-bottom: 20px;
                 box-shadow: 0 20px 20px rgba(0,0,0,0.5);
+                @include media(sm) {
+                    flex-direction: column;
+                }
                 .category-heading {
                     position: relative;
                     background: $white;
                     padding: 0 30px;
+                    @include media(sm) {
+                        display: inline-block;
+                        margin: 0 30%;
+                    }
                 }
                 .heading {
                     position: relative;
                     width: 400px;
                     margin: 0 20px;
                     border-right: #F1F1F1 solid 4px ;
+                    @include media(sm) {
+                        width: 100%;
+                        margin: 0;
+                    }
                     &:before {
                         content: "";
                         display: block;
@@ -315,11 +360,18 @@ p, span, li, table, a {
                     .subheading {
                         opacity: 0;
                         visibility: hidden;
+                        @include media(sm) {
+                            width: 50%;
+                            display: inline-block;
+                        }
                         img, h4 {
                             transition: all ease-in-out .2s;
                         }
                         &__text {
                             margin-top: -40px;
+                            @include media(sm) {
+                                margin-top: -10px;
+                            }
                         }
                         &:hover {
                             img {
@@ -339,6 +391,9 @@ p, span, li, table, a {
         background: url("src/img/line-header.png");
     }
     &__menu {
+        @include media(sm) {
+            flex-wrap: wrap;
+        }
         li {
             a {
                 color: #B3B2B7;
@@ -362,6 +417,9 @@ p, span, li, table, a {
             border-bottom: 0;
             position: absolute;
             top: 26px;
+            @include media(sm) {
+                display: none !important
+            }
         }
         &:before {
             content: "";
@@ -372,6 +430,11 @@ p, span, li, table, a {
             position: relative;
             z-index: 99;
             padding: 0 10px;
+            @include media(sm) { 
+                padding: 0;
+                font-size: 12px;
+                line-height: 12px;
+            }
         }
     }
     > .top-level:nth-child(1) {
@@ -380,6 +443,10 @@ p, span, li, table, a {
         padding-right: 20px;
         border-right: #E5E4E9 solid 1px;
         text-align: center;
+        @include media(sm) {
+            width: auto;
+            padding: 5px;
+        }
         &:after {
             width: 140px;
             height: 15px;
@@ -391,10 +458,19 @@ p, span, li, table, a {
     > .top-level:nth-child(2) {
         width: 140px;
         padding-left: 20px;
+        @include media(sm) {
+            width: auto;
+            padding-left: 5px;
+        }
         &:after {
             width: 120px;
             height: 15px;
             border-right: none;
+        }
+        &::before {
+            @include media(sm) {
+                display: none;
+            }
         }
         > a {
             top: 26px;
@@ -404,6 +480,10 @@ p, span, li, table, a {
         width: 140px;
         padding-right: 20px;
         border-right: #E5E4E9 solid 1px;
+        @include media(sm) {
+            width: auto;
+            padding-right: 5px;
+        }
         &:after {
             width: 120px;
             height: 15px;
@@ -413,6 +493,9 @@ p, span, li, table, a {
             content: "CALLE";
             transform: translate(-40px, 0px);
             display: inline-block;
+            @include media(sm) {
+                transform: translate(-15px, 0px);
+            }
         }
     }
     > .top-level:nth-child(4) {
@@ -435,6 +518,10 @@ p, span, li, table, a {
         padding-right: 20px;
         border-right: #E5E4E9 solid 1px;
         text-align: center;
+        @include media(sm) {
+            width: auto;
+            padding: 5px;
+        }
         &:after {
             width: 230px;
             height: 15px;
@@ -457,6 +544,11 @@ p, span, li, table, a {
 }
 
 .slide-home {
+    &.slick-dotted.slick-slider {
+        @include media(sm){
+            margin-bottom: 60px;
+        }
+    }
     .slick-prev {
         left: 40px;
         z-index: 2;
@@ -489,6 +581,13 @@ p, span, li, table, a {
     
     .slick-slide {
         position: relative;
+        .image-slide {
+            @include media(sm){
+                object-fit: cover;
+                height: 200px;
+                object-position: right;
+            }
+        }
     }
     
     &__content {
@@ -533,6 +632,45 @@ p, span, li, table, a {
                     border-radius: 50%;
                 }
             }
+        }
+    }
+}
+
+.estate-slide {
+    border: #454548 solid 2px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: bottom;
+    margin: 0 5px;
+    cursor: pointer;
+    &:Hover {
+        background-color: $color-gray;
+    }
+    &.pause {
+        &:after,&:before {
+            content: "";
+            display: inline-block;
+            height: 10px;
+            border-left: #454548 solid 2px;
+            vertical-align: text-top;
+            margin-top: 1px;
+        }
+        &::before {
+            margin-right: 2px;
+        }
+    }
+    &.play {
+        &:after {
+            content: "";
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            border: solid transparent 6px;
+            border-left-color: #454548;
+            vertical-align: text-top;
+            margin-left: 6px;
         }
     }
 }
@@ -653,6 +791,9 @@ p, span, li, table, a {
         margin-top: -60px;
         position: relative;
         z-index: 2;
+        @include media(sm) {
+            margin-top: -10px;
+        }
     }
     &__name {
         position: relative;
@@ -678,6 +819,15 @@ p, span, li, table, a {
             margin: 0 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             margin-bottom: 20px;
+        }
+    }
+}
+
+.newsletter {
+    &__text {
+        text-align: left;
+        @include media(sm){
+            text-align: center;
         }
     }
 }
