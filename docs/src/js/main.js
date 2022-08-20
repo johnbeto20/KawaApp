@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
     $('.slide-home').slick({
         dots: true,
@@ -13,6 +15,10 @@ $(document).ready(function(){
 
 
 $(function () {
+
+$("#menuAction").on("click", function () {
+    $("#menuGeneral").toggleClass("show");
+})
 
 
 var dataBase = [ 

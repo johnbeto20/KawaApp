@@ -1,0 +1,23 @@
+@mixin media($consulta) {
+    $media-sm: "(max-width: 768px)"; // Tablets
+    $media-xs: "(max-width : 480px)"; // Telefonos
+    $media-xxs: "(max-width : 320px)"; // iPhone Retina
+  
+    @if $consulta==xxs {
+      @media #{$media-xxs} {
+        @content;
+      }
+    }
+  
+    @if $consulta==xs {
+      @media #{$media-xs} {
+        @content;
+      }
+    }
+  
+    @else if $consulta==sm {
+      @media #{$media-sm} {
+        @content;
+      }
+    }
+  }

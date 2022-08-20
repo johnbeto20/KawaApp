@@ -11000,6 +11000,10 @@ textarea.form-control-lg {
   transform: scale(1, 1);
 }
 
+.form-control {
+  margin-bottom: 20PX;
+}
+
 .f-oswald {
   font-family: "Oswald", sans-serif;
 }
@@ -11020,17 +11024,33 @@ p, span, li, table, a {
   font-size: 1.2em;
 }
 
+.ai-flex-start {
+  align-items: flex-start;
+}
+
 .Sub-title {
   display: flex;
   white-space: nowrap;
   font-weight: bold;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .Sub-title {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+  }
+}
 .Sub-title:after {
   content: "";
   display: inline-block;
   border-bottom: #69BE28 solid 1px;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .Sub-title:after {
+    display: none;
+  }
 }
 
 .fc-dark .form-check-input {
@@ -11044,12 +11064,25 @@ p, span, li, table, a {
 .header__logo {
   width: 350px;
 }
+@media (max-width: 768px) {
+  .header__logo {
+    width: 300px;
+  }
+}
 .header__brand {
   background-color: #000;
 }
 .header__contMenus {
   background: #202022;
   position: relative;
+}
+@media (max-width: 768px) {
+  .header__contMenus {
+    display: none;
+  }
+}
+.header__contMenus.show {
+  display: block;
 }
 .header__list > a, .header__menu > a, .header__megaMenu > a {
   transition: all ease-in 0.1s;
@@ -11058,9 +11091,31 @@ p, span, li, table, a {
 .header__list > a:hover, .header__menu > a:hover, .header__megaMenu > a:hover {
   color: #fff;
 }
+@media (max-width: 768px) {
+  .header__list li {
+    border: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .header__list a {
+    font-size: 0;
+  }
+}
 .header__list a:hover {
   transition: all ease-in 0.2S;
   color: #fff !important;
+}
+.header__hamburger-menu {
+  display: none;
+  width: 26px;
+}
+@media (max-width: 768px) {
+  .header__hamburger-menu {
+    display: inline-block;
+  }
+}
+.header__hamburger-menu svg {
+  fill: #69BE28;
 }
 .header__megaMenu > li {
   cursor: pointer;
@@ -11288,6 +11343,14 @@ p, span, li, table, a {
   content: "MOTOCROSS / ENDURO";
 }
 
+@media (max-width: 768px) {
+  .promo-info p {
+    background: url(src/img/ico/icon-arrow-green.svg) no-repeat 99% center;
+    background-size: 10px;
+    font-size: 20px;
+  }
+}
+
 .slide-home .slick-prev {
   left: 40px;
   z-index: 2;
@@ -11325,6 +11388,22 @@ p, span, li, table, a {
   z-index: 99;
   width: 430px;
   top: 200px;
+}
+@media (max-width: 768px) {
+  .slide-home__content {
+    position: inherit;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #000;
+    text-align: center;
+    padding: 50px 60px;
+  }
+  .slide-home__content img {
+    margin: 0 auto;
+    width: 80%;
+    min-width: auto;
+  }
 }
 .slide-home__content h2, .slide-home__content .h2 {
   font-size: 3em;
@@ -11382,6 +11461,9 @@ p, span, li, table, a {
 }
 .element-obj > a:hover .element-obj__name {
   color: #69BE28 !important;
+}
+.element-obj__tab {
+  overflow-y: auto;
 }
 .element-obj__tab img {
   min-height: 25px;
@@ -11471,4 +11553,12 @@ p, span, li, table, a {
   margin: auto;
   transition: all ease-in 0.2s;
   height: 4px;
+}
+
+@media (max-width: 768px) {
+  .content--blog {
+    margin: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=styles.css.map */

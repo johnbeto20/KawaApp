@@ -1,23 +1,5 @@
-//variables generales
-$color-1: #69BE28;
-$color-black: #000000;
-$color-gray: #F0F0F0;
-$color-text: #434343;
-//editar variables bootstrap
-$primary: $color-1;
-$secondary: $color-text;
-$font-family-base: 'Oswald', sans-serif !default;
-$font-family-code: 'Fira Sans', sans-serif !default;
-$border-color: #707070;
-$border-radius: 8px;
-$input-btn-font-size: 18px;
-$input-btn-padding-x:1.25rem; 
-$input-btn-padding-y:0.75rem; 
-$body-color: $color-black;
-$input-btn-font-family: $font-family-code;
-$input-btn-font-size: 16px;
-$input-btn-border-width: 2px;
-$form-check-input-focus-box-shadow: none;
+@import "src/scss/mixin";
+@import "src/scss/var";
 
 //extend
 %resetList {
@@ -104,6 +86,10 @@ $form-check-input-focus-box-shadow: none;
 
 //GENERAL  
 
+.form-control {
+    margin-bottom: 20PX;
+}
+
 .f-oswald {
     font-family: $font-family-base;
 }
@@ -123,16 +109,28 @@ p, span, li, table, a {
     font-size: 1.2em;
 }
 
+.ai-flex-start  {
+    align-items: flex-start;
+}
+
 .Sub-title {
     display: flex;
     white-space: nowrap;
     font-weight: bold;
     text-transform: uppercase;
+    @include media(sm){
+        display: block;
+        text-align: center;
+        margin-top: 60px;
+    }
     &:after {
         content: "";
         display: inline-block;
         border-bottom: $color-1 solid 1px;
         width: 100%;
+        @include media(sm){
+            display: none;
+        }
     }
 }
 
@@ -151,6 +149,9 @@ p, span, li, table, a {
 .header {
     &__logo {
         width: 350px;
+        @include media(sm){
+            width: 300px;
+        }
     }
     &__brand {
         background-color: $black;
@@ -158,6 +159,12 @@ p, span, li, table, a {
     &__contMenus {
         background: #202022;
         position: relative;
+        @include media(sm){
+            display: none;
+        }
+        &.show {
+            display: block
+        }
     }
     &__list, &__menu, &__megaMenu {
         @extend %resetList;
@@ -170,11 +177,29 @@ p, span, li, table, a {
         }
     }
     &__list {
+        li {
+            @include media(sm){
+                border: none !important;
+            }
+        }
         a {
+            @include media(sm){
+                font-size: 0;
+            }
             &:hover {
                 transition: all ease-in .2S;
                 color: $white !important;
             }
+        }
+    }
+    &__hamburger-menu {
+        display: none;
+        width: 26px;
+        @include media(sm){
+            display: inline-block;
+        }
+        svg {
+            fill: $color-1;
         }
     }
     &__megaMenu {
@@ -421,6 +446,16 @@ p, span, li, table, a {
 
 }
 
+.promo-info {
+    p {
+        @include media(sm){
+            background: url(src/img/ico/icon-arrow-green.svg) no-repeat 99% center;
+            background-size: 10px;
+            font-size: 20px;
+        }
+    }
+}
+
 .slide-home {
     .slick-prev {
         left: 40px;
@@ -462,6 +497,20 @@ p, span, li, table, a {
         z-index: 99;
         width: 430px;
         top: 200px;
+        @include media(sm){
+            position: inherit;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background: $black;
+            text-align: center;
+            padding: 50px 60px;
+            img {
+                margin: 0 auto;
+                width: 80%;
+                min-width: auto;
+            }
+        }
         h2 {
             font-size: 3em;
         }
@@ -526,6 +575,7 @@ p, span, li, table, a {
     }
     &__tab {
         @extend %resetList;
+        overflow-y: auto;
         img {
             min-height: 25px;
             max-height: 30px;
@@ -618,6 +668,16 @@ p, span, li, table, a {
             margin: auto;
             transition: all ease-in .2s;
             height: 4px;
+        }
+    }
+}
+
+.content {
+    &--blog {
+        @include media(sm){
+            margin: 0 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
         }
     }
 }
