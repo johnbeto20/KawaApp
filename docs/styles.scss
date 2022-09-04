@@ -364,6 +364,9 @@ p, span, li, table, a {
                 box-shadow: 0 20px 20px rgba(0,0,0,0.5);
                 @include media(sm) {
                     flex-direction: column;
+                    .container.d-flex {
+                        display: block !important;
+                    }
                 }
                 .category-heading {
                     position: relative;
@@ -447,6 +450,10 @@ p, span, li, table, a {
                             margin-top: 20px;
                             margin-right: 30px;
                             display: inline-block;
+                            @include media(sm) {
+                                width: 42%;
+                                margin: 0 15px;
+                            }
                         }
                     }
                 }
@@ -456,6 +463,9 @@ p, span, li, table, a {
                     .heading {
                         width: 100%;
                         display: flex;
+                        @include media(sm) {
+                            display: block;
+                        }
                         .category-heading {
                             display: none;
                         }
@@ -466,6 +476,10 @@ p, span, li, table, a {
                         .subheading {
                             width: 340px;
                             margin-right: 30px;
+                            @include media(sm) {
+                                width: 42%;
+                                margin: 0 15px;
+                            }
                         }
                     }
                 }
