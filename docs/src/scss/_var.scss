@@ -8,7 +8,7 @@ $primary: $color-1;
 $secondary: $color-text;
 $font-family-base: 'Oswald', sans-serif !default;
 $font-family-code: 'Fira Sans', sans-serif !default;
-$border-color: #707070;
+$border-color: $color-text;
 $border-radius: 8px;
 $input-btn-font-size: 18px;
 $input-btn-padding-x:1.25rem; 

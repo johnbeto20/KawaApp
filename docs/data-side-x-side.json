@@ -2,59 +2,61 @@
     "category": [{
         "title": "teryx",
         "link": "",
-        "mark": ""
+        "mark": "®"
     }, {
         "title": "teryx",
-            "link": "#",
+            "link": "",
             "headingArray": [{
             "heading": [{
+                "titleText": "TERYX DEPORTIVO 2 PASAJEROS",
                 "title": "standar",
-                    "link": "#",
+                    "link": "",
                     "subheading": [{
                         "model":"2021",
                         "title": "TERYX KRX 1000 ESPECIAL",
                         "imagen": "TERYX_KRX _1000 _ESPECIAL.png",
-                        "link": "#URLhere",
-                        "price": "125.000.000"
+                        "link": "https://www.autecomobility.com/cuatrimoto-kawasaki-teryx-krx-1000-especial-edition/p",
+                        "price": "PVSP: $125.000.000"
                     }, {
                         "model":"2021",
                         "title": "TERYX KRX 1000 TRAIL",
                         "imagen": "TERYX_KRX _1000 _TRAIL.png",
-                        "link": "#URLhere",
-                        "price": "130.000.000"
+                        "link": "https://www.autecomobility.com/cuatrimoto-kawasaki-teryx-krx-1000/p",
+                        "price": "PVSP: $130.000.000"
                     }
                 ]
             }]
         }]
     }, {
         "title": "mule",
-        "link": "#URLhere",
-        "mark": ""
+        "link": "",
+        "mark": "™"
     }, {
         "title": "mule",
-            "link": "#URLhere",
+            "link": "",
             "headingArray": [{
             "heading": [{
+                "titleText": "",
                 "title": "standar",
-                    "link": "#URLhere",
+                    "link": "",
                     "subheading": [{
                         "model":"2021",
                         "title": "MULE PRO DXT",
                         "imagen": "MULE_PRO_DXT.png",
-                        "link": "#URLhere",
+                        "link": "https://www.autecomobility.com/kawasaki-mule-pro-dxt/p",
                         "price": "AGOTADO"
                     }, {
                         "model":"2022",
                         "title": "MULE PRO FXT",
                         "imagen": "MULE_PRO_FXT.png",
-                        "link": "#URLhere",
+                        "link": "https://www.autecomobility.com/kawasaki-mule-pro-fxt/p",
                         "price": "AGOTADO"
                     },
                     {
                         "model":"2022",
                         "title": "MULE 4010 TRANS 4X4",
                         "imagen": "MULE_410_TRANS_4X4.png",
-                        "link": "#URLhere",
+                        "link": "https://www.autecomobility.com/kawasaki-mule-4010-trans-4x4/p",
                         "price": "AGOTADO"
                     }]
             }]

@@ -11,6 +11,11 @@
 @import ".././node_modules/bootstrap/scss/bootstrap.scss";
 
 //reset
+[href="#"] {
+    pointer-events: none; 
+    cursor: default; 
+}
+
 
 .btn {
     text-transform: uppercase;
@@ -159,6 +164,15 @@ p, span, li, table, a {
     }
 }
 
+.blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    background: rgb(0 0 0 / 30%);
+    * {
+        opacity: 0.9;
+    }
+}
+
 //HEADER
 
 .header {
@@ -183,6 +197,9 @@ p, span, li, table, a {
     }
     &__list, &__menu, &__megaMenu {
         @extend %resetList;
+        li {
+            font-size: 14px;
+        }
         > a {
             transition: all ease-in 0.1s;
             color: #77767E;
@@ -198,8 +215,13 @@ p, span, li, table, a {
             }
         }
         a {
+            font-size: 14px;
             @include media(sm){
                 font-size: 0;
+            }
+            img {
+                height: 16px;
+                margin-top: 2px;
             }
             &:hover {
                 transition: all ease-in .2S;
@@ -218,6 +240,11 @@ p, span, li, table, a {
         }
     }
     &__megaMenu {
+        .container {
+            margin-top:0;
+            margin-bottom: 0;
+            list-style-type: none;
+        }
         @include media(sm) {
             border-top: $color-text solid 1px;
         }
@@ -234,6 +261,13 @@ p, span, li, table, a {
             }
             &:hover {
                 background: #2C2C2E;
+                border-color: $color-1 !important;
+                b {
+                    color: $color-1;
+                }
+                &:after {
+                    border-top-color: $color-1;
+                }
                 .header__megaMenuContent {
                     display: flex;
                     @include media(sm) {
@@ -259,13 +293,14 @@ p, span, li, table, a {
             background: #D6D5DA;
             .top-level {
                 padding-top: 15px;
+                font-size: 12px;
                 @include media(sm) {
                     padding-top: 5px;
                 }
                 > a {
                     font-family: $font-family-base;
                     font-weight: bold;
-                    font-size: 24px;
+                    font-size: 18px;
                     color: $black;
                     padding: 10px;
                     border-radius: 10px 10px 0 0;
@@ -275,7 +310,9 @@ p, span, li, table, a {
                     text-decoration: none;
                     text-transform: uppercase;
                     transition: all ease-in .2s;
-                    margin: 10px 0 15px 0;
+                    margin: 10px 0;
+                    pointer-events: none; 
+                    cursor: default; 
                     @include media(sm) {
                         margin: 0;
                         font-size: 20px;
@@ -332,6 +369,7 @@ p, span, li, table, a {
                     position: relative;
                     background: $white;
                     padding: 0 30px;
+                    font-weight: 400;
                     @include media(sm) {
                         display: inline-block;
                         margin: 0 30%;
@@ -339,8 +377,8 @@ p, span, li, table, a {
                 }
                 .heading {
                     position: relative;
-                    width: 400px;
-                    margin: 0 20px;
+                    width: 360px;
+                    padding: 0 20px;
                     border-right: #F1F1F1 solid 4px ;
                     @include media(sm) {
                         width: 100%;
@@ -350,7 +388,7 @@ p, span, li, table, a {
                         content: "";
                         display: block;
                         border-bottom: solid 1px #F1F1F1;
-                        width: 95%;
+                        width: 90%;
                         position: absolute;
                         top: 14px;
                     }
@@ -360,6 +398,7 @@ p, span, li, table, a {
                     .subheading {
                         opacity: 0;
                         visibility: hidden;
+                        border-bottom: solid 4px transparent;
                         @include media(sm) {
                             width: 50%;
                             display: inline-block;
@@ -369,11 +408,14 @@ p, span, li, table, a {
                         }
                         &__text {
                             margin-top: -40px;
+                            z-index: 2;
+                            position: relative;
                             @include media(sm) {
                                 margin-top: -10px;
                             }
                         }
                         &:hover {
+                            border-bottom-color: $color-1;
                             img {
                                 transform: scale(0.95);
                             }
@@ -382,13 +424,57 @@ p, span, li, table, a {
                             }
                         }
                     }
+                    &.only-one {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        &:before {
+                            width: 100%;
+                        }
+                        .category-heading {
+                            position: absolute;
+                            margin: auto;
+                            right: 0;
+                            left: 0;
+                            width: 260px;
+                            top: -14px;
+                            &, &::before {
+                                display: block !important;;
+                            }
+                        }
+                        .subheading {
+                            width: 340px;
+                            margin-top: 20px;
+                            margin-right: 30px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .list-vertical {
+                .cont-heading {
+                    .heading {
+                        width: 100%;
+                        display: flex;
+                        .category-heading {
+                            display: none;
+                        }
+                        &:before {
+                            width: 100%;
+                            top: -2px;
+                        }
+                        .subheading {
+                            width: 340px;
+                            margin-right: 30px;
+                        }
+                    }
                 }
             }
         }
     }
     &__line {
-        height: 30px;
-        background: url("src/img/line-header.png");
+        height: 24px;
+        background: url("src/img/line-header.png") 0 -2px;
     }
     &__menu {
         @include media(sm) {
@@ -406,7 +492,7 @@ p, span, li, table, a {
     }
 }
 
-#nav-0 {
+#nav-0, #nav-1, #nav-2 {
     > .top-level {
         &:after {
             content: "";
@@ -438,8 +524,7 @@ p, span, li, table, a {
         }
     }
     > .top-level:nth-child(1) {
-        width: 180px;
-        padding-left: 20px;
+        width: 160px;
         padding-right: 20px;
         border-right: #E5E4E9 solid 1px;
         text-align: center;
@@ -452,7 +537,7 @@ p, span, li, table, a {
             height: 15px;
         }
         &:before {
-            content: "CALLE/PISTA";
+            content: "CALLE / PISTA";
         }
     }
     > .top-level:nth-child(2) {
@@ -473,7 +558,7 @@ p, span, li, table, a {
             }
         }
         > a {
-            top: 26px;
+            top: 16px;
         }
     }
     > .top-level:nth-child(3) {
@@ -499,21 +584,21 @@ p, span, li, table, a {
         }
     }
     > .top-level:nth-child(4) {
-        width: 300px;
+        width: 260px;
         padding-left: 20px;
         padding-right: 20px;
         border-right: #E5E4E9 solid 1px;
         text-align: center;
         &:after {
-            width: 260px;
+            width: 220px;
             height: 15px;
         }
         &:before {
-            content: "OFF-ROAD/DOBLE-PROPÓSITO";
+            content: "OFF-ROAD / DOBLE PROPÓSITO";
         }
     }
     > .top-level:nth-child(5) {
-        width: 270px;
+        width: 220px;
         padding-left: 20px;
         padding-right: 20px;
         border-right: #E5E4E9 solid 1px;
@@ -523,7 +608,7 @@ p, span, li, table, a {
             padding: 5px;
         }
         &:after {
-            width: 230px;
+            width: 180px;
             height: 15px;
         }
         &:before {
@@ -533,6 +618,46 @@ p, span, li, table, a {
 
 }
 
+#nav-1 {
+    > .top-level:nth-child(1) {
+        width:200px;
+        &:after {
+            width: 180px;
+        }
+        &:before {
+            content: "DEPORTE Y RECREACIÓN";
+        }
+    }
+    > .top-level:nth-child(2) {
+        width: 230px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-right: #E5E4E9 solid 1px;
+        a {
+            top: 0;
+        }
+        text-align: center;
+        &:after {
+            width: 190px;
+            border-right: #B1B0B5 solid 1px;
+        }
+        &:before {
+            content: "UTILITARIO / RECREACIÓN";
+        }
+    }
+}
+
+#nav-2 {
+    > .top-level:nth-child(1) {
+        width:200px;
+        &:after {
+            width: 180px;
+        }
+        &:before {
+            content: "MOTOS ACUÁTICAS";
+        }
+    }
+}
 .promo-info {
     p {
         @include media(sm){
@@ -578,9 +703,17 @@ p, span, li, table, a {
             transform: rotate(135deg);
         }
     }
+
+    .slick-track {
+        will-change: transform;
+    }
     
     .slick-slide {
         position: relative;
+        z-index: 2;
+        &:not(.slick-active) {
+            
+        }
         .image-slide {
             @include media(sm){
                 object-fit: cover;
@@ -592,10 +725,9 @@ p, span, li, table, a {
     
     &__content {
         position: absolute;
-        left: 80px;
         z-index: 99;
         width: 430px;
-        top: 200px;
+        top: 80px;
         @include media(sm){
             position: inherit;
             left: 0;
@@ -616,7 +748,10 @@ p, span, li, table, a {
     }
     .slick-dots {
         position: inherit;
+        display: flex !important;
+        justify-content: center;
         li {
+            order: 2;
             &.slick-active {
                 button {
                     &:before {
@@ -644,6 +779,7 @@ p, span, li, table, a {
     border-radius: 50%;
     vertical-align: bottom;
     margin: 0 5px;
+    order: 1;
     cursor: pointer;
     &:Hover {
         background-color: $color-gray;
@@ -715,9 +851,9 @@ p, span, li, table, a {
         @extend %resetList;
         overflow-y: auto;
         img {
-            min-height: 25px;
-            max-height: 30px;
-            max-width: 130px;
+            min-height: 20px;
+            max-height: 26px;
+            max-width: 125px;
             min-width: 60px;
         }
         li {
@@ -726,6 +862,7 @@ p, span, li, table, a {
             padding-bottom: 15px;
             color: $border-color;
             padding-top: 30px;
+            font-size: 14px;
             &:after {
                 content: "";
                 display: block;
@@ -788,7 +925,7 @@ p, span, li, table, a {
         }
     }
     &__text {
-        margin-top: -60px;
+        margin-top: -30px;
         position: relative;
         z-index: 2;
         @include media(sm) {

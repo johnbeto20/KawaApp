@@ -1,32 +1,33 @@
  { 
     "category": [{
-        "title": "jetski",
+        "title": "jet ski",
         "link": "",
         "mark": ""
     }, {
         "title": "jetski",
-            "link": "#",
+            "link": "",
             "headingArray": [{
             "heading": [{
+                "titleText": "",
                 "title": "standar",
-                    "link": "#",
+                    "link": "",
                     "subheading": [{
                         "model":"2020",
                         "title": "JET SKI SX-R",
-                        "imagen": "JET_SKI _SX_160LX.png",
-                        "link": "#URLhere",
+                        "imagen": "JET_SKI_SX-R.png",
+                        "link": "",
                         "price": "AGOTADO"
                     }, {
-                        "model":"2020",
-                        "title": "JET SKI STX 160LX",
+                        "model":"2022",
+                        "title": "JET SKI STX 160 LX",
                         "imagen": "JET_SKI _SX_160LX.png",
-                        "link": "#URLhere",
-                        "price": "AGOTADO"
+                        "link": "https://www.autecomobility.com/jet-sky-stx-160-lx/p",
+                        "price": "PVSP $:$79.990.000"
                     },  {
                         "model":"2020",
-                        "title": "JET SKI ULTRA 310X",
+                        "title": "JET SKI ULTRA 310 X",
                         "imagen": "JET_SKI _ULTRA-310X.png",
-                        "link": "#URLhere",
+                        "link": "",
                         "price": "AGOTADO"
                     }
                 ]
