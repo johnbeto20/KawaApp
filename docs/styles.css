@@ -11653,6 +11653,10 @@ p, span, li, table, a {
   position: relative;
   z-index: 2;
 }
+.slide-home .slick-slide .container {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
 @media (max-width: 768px) {
   .slide-home .slick-slide .image-slide {
     -o-object-fit: cover;

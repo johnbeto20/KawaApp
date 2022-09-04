@@ -725,6 +725,10 @@ p, span, li, table, a {
     .slick-slide {
         position: relative;
         z-index: 2;
+        .container {
+            --bs-gutter-x: 0;
+            --bs-gutter-y: 0;
+        }
         &:not(.slick-active) {
             
         }
