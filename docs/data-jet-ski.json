@@ -2,13 +2,13 @@
     "category": [{
         "title": "jet ski",
         "link": "",
-        "mark": ""
+        "mark": "®"
     }, {
         "title": "jetski",
             "link": "",
             "headingArray": [{
             "heading": [{
-                "titleText": "",
+                "titleText": "DE 2 A 4 PASAJEROS",
                 "title": "standar",
                     "link": "",
                     "subheading": [{
@@ -22,7 +22,7 @@
                         "title": "JET SKI STX 160 LX",
                         "imagen": "JET_SKI _SX_160LX.png",
                         "link": "https://www.autecomobility.com/jet-sky-stx-160-lx/p",
-                        "price": "PVSP $:$79.990.000"
+                        "price": "PVSP: $79.990.000"
                     },  {
                         "model":"2020",
                         "title": "JET SKI ULTRA 310 X",

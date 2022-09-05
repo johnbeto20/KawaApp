@@ -95,8 +95,8 @@
             }]
         }, {
             "heading": [{
-                "titleText": "Hipernaked",
-                "title": "hipernaked",
+                "titleText": "Hypernaked",
+                "title": "hypernaked",
                     "link": "",
                     "subheading": [{
                         "model":"2023",
@@ -172,7 +172,7 @@
                         "model":"2022",
                         "title": "KLX 150J",
                         "imagen": "Kawasaki_KLX150J.png",
-                        "link": "",
+                        "link": "https://www.autecomobility.com/moto-kawasaki-klx150-j/p",
                         "price": "PVSP: $12.499.000"
                     }]
             }]

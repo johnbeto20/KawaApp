@@ -374,6 +374,10 @@ p, span, li, table, a {
                     background: $white;
                     padding: 0 30px;
                     font-weight: 400;
+                    top: 0px;
+                    &:empty {
+                        padding: 0;
+                    }
                     @include media(sm) {
                         display: inline-block;
                         margin: 0px 15%;
@@ -385,6 +389,7 @@ p, span, li, table, a {
                     width: 360px;
                     padding: 0 20px;
                     border-right: #F1F1F1 solid 4px ;
+                    
                     @include media(sm) {
                         width: 100%;
                         margin: 0;
@@ -434,9 +439,11 @@ p, span, li, table, a {
                         width: 100%;
                         display: flex;
                         flex-wrap: wrap;
-                        padding-top: 20px;
                         &:before {
                             width: 100%;
+                        }
+                        .heading {
+                            padding-top: 20px;
                         }
                         .category-heading {
                             position: absolute;
@@ -444,10 +451,8 @@ p, span, li, table, a {
                             right: 0;
                             left: 0;
                             width: 260px;
-                            top: -14px;
                             &, &::before {
                                 display: block !important;
-                                top: 0;
                             }
                         }
                         .subheading {
@@ -470,13 +475,21 @@ p, span, li, table, a {
                         display: flex;
                         @include media(sm) {
                             display: block;
-                        }
+                        }/*
                         .category-heading {
                             display: none;
-                        }
+                        }*/
                         &:before {
                             width: 100%;
                             top: -2px;
+                        }
+                        &.only-one {
+                            .category-heading {
+                                &, &::before {
+                                    z-index: 99;
+                                    top: -14px;
+                                }
+                            }
                         }
                         .subheading {
                             width: 340px;

@@ -58,6 +58,8 @@ var dataBase = [
                             html+=`<li class="heading text-center only-one">`;
                         } else if(this.heading[0].titleText == "TERYX DEPORTIVO 2 PASAJEROS"){
                             html+=`<li class="heading text-center only-one">`;
+                        } else if(this.heading[0].titleText == "DE 2 A 4 PASAJEROS"){
+                            html+=`<li class="heading text-center only-one">`;
                         }else {
                             html+=`<li class="heading text-center">`;
                         }
