@@ -278,6 +278,7 @@ p, span, li, table, a {
                 width: 100%;
                 text-align: center;
                 border: none !important;
+                font-size: 13px;
             }
         }
         &Content {
@@ -375,7 +376,8 @@ p, span, li, table, a {
                     font-weight: 400;
                     @include media(sm) {
                         display: inline-block;
-                        margin: 0 30%;
+                        margin: 0px 15%;
+                        width: 60%;
                     }
                 }
                 .heading {
@@ -386,6 +388,7 @@ p, span, li, table, a {
                     @include media(sm) {
                         width: 100%;
                         margin: 0;
+                        border-right: none;
                     }
                     &:before {
                         content: "";
@@ -403,7 +406,7 @@ p, span, li, table, a {
                         visibility: hidden;
                         border-bottom: solid 4px transparent;
                         @include media(sm) {
-                            width: 50%;
+                            width: 100%;
                             display: inline-block;
                         }
                         img, h4 {
@@ -431,6 +434,7 @@ p, span, li, table, a {
                         width: 100%;
                         display: flex;
                         flex-wrap: wrap;
+                        padding-top: 20px;
                         &:before {
                             width: 100%;
                         }
@@ -452,7 +456,7 @@ p, span, li, table, a {
                             margin-right: 30px;
                             display: inline-block;
                             @include media(sm) {
-                                width: 42%;
+                                width: 92%;
                                 margin: 0 15px;
                             }
                         }
@@ -478,7 +482,7 @@ p, span, li, table, a {
                             width: 340px;
                             margin-right: 30px;
                             @include media(sm) {
-                                width: 42%;
+                                width: 92%;
                                 margin: 0 15px;
                             }
                         }
