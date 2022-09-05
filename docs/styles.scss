@@ -442,7 +442,8 @@ p, span, li, table, a {
                             width: 260px;
                             top: -14px;
                             &, &::before {
-                                display: block !important;;
+                                display: block !important;
+                                top: 0;
                             }
                         }
                         .subheading {
