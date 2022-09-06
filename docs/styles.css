@@ -11631,6 +11631,14 @@ p, span, li, table, a {
     margin-bottom: 60px;
   }
 }
+.slide-home .slick-slide.slick-active {
+  position: relative;
+  z-index: 99;
+}
+.slide-home .slick-cloned {
+  position: relative;
+  z-index: -1;
+}
 .slide-home .slick-prev {
   left: 40px;
   z-index: 2;
@@ -11662,18 +11670,6 @@ p, span, li, table, a {
 .slide-home .slick-track {
   will-change: transform, transition;
 }
-.slide-home .slick-slide {
-  position: relative;
-  z-index: 2;
-  display: block;
-  border: none;
-}
-.slide-home .slick-slide img {
-  position: relative;
-  z-index: 2;
-  display: block;
-  border: none;
-}
 .slide-home .slick-slide .container {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
@@ -11686,12 +11682,6 @@ p, span, li, table, a {
     -o-object-position: right;
        object-position: right;
   }
-}
-.slide-home .slick-slide.slick-active {
-  z-index: 99;
-}
-.slide-home .slick-slide.slick-active img {
-  z-index: 99;
 }
 .slide-home__content {
   position: absolute;

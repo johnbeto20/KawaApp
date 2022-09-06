@@ -4,11 +4,13 @@ $(document).ready(function(){
     $('.slide-home').slick({
         dots: true,
         infinite: true,
-        speed: 800,
+        speed: 300,
         slidesToShow: 1,
         adaptiveHeight: true,
         autoplay: true,
         autoplaySpeed: 4000,
+        fade: true,
+        cssEase: 'linear'
     });
     $("#playPAuse").toggle(
         function(){
