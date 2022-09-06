@@ -37,11 +37,9 @@
             margin-right: 5px;
         }
         &:hover {
-            background-color: $color-1;
+            background-color: transparent;
+            color: $color-1;
             border-color: $color-1;
-            &:before {
-                border-left-color: $white;
-            }
         }
     }
     &-primary {
@@ -488,6 +486,7 @@ p, span, li, table, a {
                                 &, &::before {
                                     z-index: 99;
                                     top: -14px;
+                                    width: 265px;
                                 }
                             }
                         }
@@ -737,7 +736,7 @@ p, span, li, table, a {
     }
 
     .slick-track {
-        will-change: transform;
+        will-change: transform, transition;
     }
     
     .slick-slide {
@@ -757,12 +756,16 @@ p, span, li, table, a {
                 object-position: right;
             }
         }
+        &.slick-active {
+            z-index: 99;
+            position: relative;
+        }
     }
     
     &__content {
         position: absolute;
         z-index: 99;
-        width: 430px;
+        width: 470px;
         top: 80px;
         @include media(sm){
             position: inherit;
