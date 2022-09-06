@@ -742,12 +742,17 @@ p, span, li, table, a {
     .slick-slide {
         position: relative;
         z-index: 2;
+        display: block;
+        border: none;
+        img {
+            position: relative;
+            z-index: 2;
+            display: block;
+            border: none;
+        }
         .container {
             --bs-gutter-x: 0;
             --bs-gutter-y: 0;
-        }
-        &:not(.slick-active) {
-            
         }
         .image-slide {
             @include media(sm){
@@ -758,7 +763,9 @@ p, span, li, table, a {
         }
         &.slick-active {
             z-index: 99;
-            position: relative;
+            img {
+                z-index: 99;
+            }
         }
     }
     

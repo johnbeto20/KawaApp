@@ -11665,6 +11665,14 @@ p, span, li, table, a {
 .slide-home .slick-slide {
   position: relative;
   z-index: 2;
+  display: block;
+  border: none;
+}
+.slide-home .slick-slide img {
+  position: relative;
+  z-index: 2;
+  display: block;
+  border: none;
 }
 .slide-home .slick-slide .container {
   --bs-gutter-x: 0;
@@ -11681,7 +11689,9 @@ p, span, li, table, a {
 }
 .slide-home .slick-slide.slick-active {
   z-index: 99;
-  position: relative;
+}
+.slide-home .slick-slide.slick-active img {
+  z-index: 99;
 }
 .slide-home__content {
   position: absolute;
