@@ -700,14 +700,22 @@ p, span, li, table, a {
 }
 
 .slide-home {
+    background: #000000;
     &.slick-dotted.slick-slider {
         @include media(sm){
             margin-bottom: 60px;
         }
     }
-    .slick-slide.slick-active {
+    .slick-list {
+        background: #000000;
+    }
+    .slick-slide {
         position: relative;
-        z-index: 99;
+        z-index: -1;
+        background: #000000;
+        &.slick-active {
+            z-index: 99;
+        }
     }
     .slick-cloned {
         position: relative;

@@ -11626,13 +11626,23 @@ p, span, li, table, a {
   }
 }
 
+.slide-home {
+  background: #000000;
+}
 @media (max-width: 768px) {
   .slide-home.slick-dotted.slick-slider {
     margin-bottom: 60px;
   }
 }
-.slide-home .slick-slide.slick-active {
+.slide-home .slick-list {
+  background: #000000;
+}
+.slide-home .slick-slide {
   position: relative;
+  z-index: -1;
+  background: #000000;
+}
+.slide-home .slick-slide.slick-active {
   z-index: 99;
 }
 .slide-home .slick-cloned {
