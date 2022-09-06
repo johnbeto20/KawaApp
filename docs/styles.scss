@@ -700,7 +700,6 @@ p, span, li, table, a {
 }
 
 .slide-home {
-    background: #000000;
     &.slick-dotted.slick-slider {
         @include media(sm){
             margin-bottom: 60px;
