@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('.slide-home').slick({
         dots: true,
         infinite: true,
-        speed: 30,
+        speed: 600,
         slidesToShow: 1,
         adaptiveHeight: true,
         autoplay: true,
